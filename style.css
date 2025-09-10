@@ -1,0 +1,161 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+}
+
+/* Game Container with frame and background */
+#game-container {
+    width: 820px; /* Slightly bigger for frame */
+    height: 620px;
+    background: url('assets/images/bg-all-level.png') no-repeat center center; /* Add your background */
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3), 0 0 0 10px #4CAF50; /* Green frame */
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Header */
+header h1 {
+    font-family: 'Chewy', cursive;
+    font-size: 48px;
+    color: #2e7d32;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #fff;
+}
+
+/* Level buttons */
+#level-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.level-btn {
+    font-family: 'Chewy', cursive;
+    font-size: 28px;
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s, box-shadow 0.2s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.level-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Game Area */
+#game-area {
+    display: none; /* Hidden initially until level is selected */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#problem-display {
+    font-size: 36px;
+    font-family: 'Baloo 2', cursive;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #aaa;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Slight transparency for readability */
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#options button {
+    font-family: 'Chewy', cursive;
+    font-size: 28px;
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s, box-shadow 0.2s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#options button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+#feedback {
+    font-size: 28px;
+    font-family: 'Baloo 2', cursive;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+}
+
+#feedback.correct {
+    color: #2e7d32;
+}
+
+#feedback.wrong {
+    color: #c62828;
+}
+
+#score {
+    font-size: 28px;
+    color: #2e7d32;
+    font-family: 'Baloo 2', cursive;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#back-to-menu {
+    font-size: 24px;
+    color: #fff;
+    background-color: #f44336;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s, box-shadow 0.2s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#back-to-menu:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}

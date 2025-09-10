@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Fun Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Level Selection Screen -->
+    <section id="level-selection">
+        <h1>Math Fun Game!</h1>
+        <button class="level-btn" data-level="1">Level 1: Addition</button>
+        <button class="level-btn" data-level="2">Level 2: Add & Sub</button>
+        <button class="level-btn" data-level="3">Level 3: Multiplication</button>
+        <button class="level-btn" data-level="4">Level 4: Add, Sub & Mul</button>
+        <button class="level-btn" data-level="5">Level 5: All Operations</button>
+        <button class="level-btn" data-level="6">🎲 Random Mode</button>
+    </section>
+
+    <!-- Game Area -->
+    <section id="game-area" style="display:none;">
+        <div id="problem-display">Problem will appear here</div>
+        <div id="options">
+            <!-- Multiple-choice buttons will be added dynamically via JS -->
+        </div>
+        <div id="feedback"></div>
+        <div id="score">Score: 0</div>
+        <button id="back-to-menu">⬅ Back to Levels</button>
+    </section>
+
+    <!-- JS -->
+    <script src="game.js"></script>
+</body>
+</html>
